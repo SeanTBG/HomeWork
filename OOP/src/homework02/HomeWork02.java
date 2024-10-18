@@ -1,3 +1,5 @@
+package homework02;
+
 /**
  * @author: Sean
  * @date: 2024/10/17

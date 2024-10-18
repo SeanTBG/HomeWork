@@ -1,3 +1,5 @@
+package homework01;
+
 /**
  * @author: Sean
  * @date: 2024/10/17
@@ -67,7 +69,7 @@ class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "HomeWork01.Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", job='" + job + '\'' +

@@ -1,9 +1,11 @@
+package homework03;
+
 /**
  * @author: Sean
  * @date: 2024/10/17
  * @project: HomeWork
  */
-public class Professor extends Teacher{
+public class Professor extends Teacher {
     public Professor(String name, int age, String post, double salary, double grade) {
         super(name, age, post, salary, grade);
     }
