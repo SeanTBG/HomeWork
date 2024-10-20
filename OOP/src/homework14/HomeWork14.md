@@ -42,9 +42,9 @@ sequenceDiagram
   C->>C:输出 "hello\t我是C的有参构造"
   C->>C:输出 "我是C的无参构造"
 ```
-![img.png](img.png)
 
 #### 详细解释
+
 1. A[开始]: 程序开始执行 main 方法。
 2. B[创建 C 对象]: 在 main 方法中创建 C 类的对象 c。
 3. C[调用 C 的无参构造方法]: 调用 C 类的无参构造方法 C()。
