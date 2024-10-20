@@ -25,17 +25,22 @@
     - A、B 和 C 类的静态变量和方法信息存储在方法区。
 #### 控制流图
 ```mermaid
-flowchart TD
-A[开始] --> B[创建 C 对象]
-B --> C[调用 C 的无参构造方法]
-C --> D[调用 C 的有参构造方法]
-D --> E[调用 B 的有参构造方法]
-E --> F[调用 A 的无参构造方法]
-F --> G[输出 "我是A"]
-G --> H[输出 "hahaha\t我是B的有参构造"]
-H --> I[输出 "hello\t我是C的有参构造"]
-I --> J[输出 "我是C的无参构造"]
-J --> K[结束]
+sequenceDiagram
+  participant A
+  participant B
+  participant C
+  
+  A->>B:创建 C 对象
+  B->>C:调用 C 的无参构造方法
+  C-->>B:返回
+  B->>C:调用 C 的有参构造方法
+  C-->>B:返回
+  B->>A:调用 B 的有参构造方法
+  A-->>B:返回
+  A->>A:输出 "我是A"
+  B->>B:输出 "hahaha\t我是B的有参构造"
+  C->>C:输出 "hello\t我是C的有参构造"
+  C->>C:输出 "我是C的无参构造"
 ```
 ![img.png](img.png)
 
