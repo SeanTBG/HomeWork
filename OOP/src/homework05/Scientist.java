@@ -8,14 +8,22 @@ package homework05;
 public class Scientist extends Staff {
     private double bonus;
 
-    public Scientist(String name, double monthSalary, double bonus) {
+    public Scientist(String name, double monthSalary) {
         super(name, monthSalary);
+        this.bonus = bonus;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
         this.bonus = bonus;
     }
 
     @Override
     public void printYearSalary() {
         System.out.println("=========科学家==========");
-        System.out.println("科学家" + getName() + "的年薪为：" + (getMonthSalary() * getSalMonth() + bonus));
+        System.out.println("科学家" + getName() + "的年薪为：" + (getMonthSalary() * getSalMonth() + getBonus()));
     }
 }

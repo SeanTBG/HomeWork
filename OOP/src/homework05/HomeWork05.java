@@ -18,9 +18,12 @@ public class HomeWork05 {
         peasant.printYearSalary();
         Waiter waiter = new Waiter("小刚", 5000);
         waiter.printYearSalary();
-        Teacher teacher = new Teacher("小刚", 5000, 300, 100);
+        Teacher teacher = new Teacher("小刚", 5000);
+        teacher.setClassDays(100);
+        teacher.setClassSalary(500);
         teacher.printYearSalary();
-        Scientist scientist = new Scientist("小刚", 5000, 300);
+        Scientist scientist = new Scientist("小刚", 5000);
+        scientist.setBonus(100000);
         scientist.printYearSalary();
     }
 }
